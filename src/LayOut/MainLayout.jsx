@@ -1,8 +1,10 @@
+import Navber from "../Components/Navber/Navber";
 
 const MainLayout = () => {
     return (
-        <div>
-            sa
+        <div className="container mx-auto">
+            <Navber></Navber>
+            
         </div>
     );
 };
