@@ -15,8 +15,9 @@ const Routers = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path:'/about',
-        element:<About></About>
+        path:'about',
+        element:<About></About>,
+        loader:()=>fetch('fakeSkill.json')
       }
     ],
   },

@@ -1,13 +1,12 @@
-// import About from "../About/About";
 
+import About from "../About/About";
 import Banner from "../Banner/Banner";
 
 const Home = () => {
     return (
         <div>
-          {/* <About></About> */}
           <Banner></Banner>
-          {/* <p className="text-red-500">this is home</p> */}
+          <About></About>
         </div>
     );
 };

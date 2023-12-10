@@ -1,0 +1,18 @@
+[
+    {
+        "name": "html",
+        "percentage": 87
+    },
+    {
+        "name": "Css",
+        "percentage": 87
+    },
+    {
+        "name": "javascript",
+        "percentage": 60
+    },
+    {
+        "name": "react",
+        "percentage": 80
+    }
+]

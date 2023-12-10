@@ -1,11 +1,12 @@
-import Banner from "../Components/Banner/Banner";
+import { Outlet } from "react-router-dom";
 import Navber from "../Components/Navber/Navber";
 
 const MainLayout = () => {
     return (
         <div className="container mx-auto">
             <Navber></Navber>
-            <Banner></Banner>
+            <Outlet></Outlet>
+            {/* <Banner></Banner> */}
         </div>
     );
 };
