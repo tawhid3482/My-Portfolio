@@ -1,8 +1,8 @@
 
 const About = () => {
     return (
-        <div>
-            abgehjyt
+        <div className="text-center mt-52">
+            asaaaaaaaaaaa
         </div>
     );
 };

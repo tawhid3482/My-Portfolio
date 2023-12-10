@@ -4,7 +4,7 @@ const MainLayout = () => {
     return (
         <div className="container mx-auto">
             <Navber></Navber>
-            
+            {/* <About></About> */}
         </div>
     );
 };
