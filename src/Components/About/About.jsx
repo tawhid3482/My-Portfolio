@@ -1,10 +1,14 @@
 import SectionTitle from "../../SectionTitle/SectionTitle";
-import UseSkills from "../../Hooks/UseSkills";
+// import UseSkills from "../../Hooks/UseSkills";
+import { useLoaderData } from "react-router-dom";
+import Skill from "../Skill/Skill";
 
 const About = () => {
-    
-  const [Skills] = UseSkills();
-  console.log(Skills);
+  //   const [Skills] = UseSkills();
+  //   console.log(Skills);
+
+  const data = useLoaderData();
+  //   console.log(data);
 
   return (
     <div className="text-white">
@@ -75,15 +79,11 @@ const About = () => {
           My Skills
         </h2>
 
-        {/* <div className="grid grid-cols-4">
-
-        <div className="w-36  border border-yellow-600 rounded-lg ">
-                <p className="text-5xl text-yellow-600 font-bold "></p>
-                <h1 className=" ml-10 uppercase font-semibold text-slate-300 ">Years of experience</h1>
-            </div>
-
-
-        </div> */}
+        <div className="grid grid-cols-4">
+          {data?.map((skill) => (
+            <Skill key={skill.name} skill={skill}></Skill>
+          ))}
+        </div>
       </div>
     </div>
   );

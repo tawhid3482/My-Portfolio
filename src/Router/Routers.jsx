@@ -13,11 +13,26 @@ const Routers = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader:async ()=> {
+          const res = await fetch('/data.json')
+          const data = await res.json()
+
+          // const data = {}
+          console.log(data)
+          return data
+        }
       },
       {
         path:'about',
         element:<About></About>,
-        loader:()=>fetch('fakeSkill.json')
+        loader:async ()=> {
+          const res = await fetch('/data.json')
+          const data = await res.json()
+
+          // const data = {}
+          console.log(data)
+          return data
+        }
       }
     ],
   },
