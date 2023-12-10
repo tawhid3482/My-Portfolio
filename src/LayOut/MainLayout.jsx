@@ -1,10 +1,11 @@
+import Banner from "../Components/Banner/Banner";
 import Navber from "../Components/Navber/Navber";
 
 const MainLayout = () => {
     return (
         <div className="container mx-auto">
             <Navber></Navber>
-            {/* <About></About> */}
+            <Banner></Banner>
         </div>
     );
 };
