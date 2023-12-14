@@ -2,6 +2,8 @@ import SectionTitle from "../../SectionTitle/SectionTitle";
 // import UseSkills from "../../Hooks/UseSkills";
 import { useLoaderData } from "react-router-dom";
 import Skill from "../Skill/Skill";
+import Experience from "../Experience/Experience";
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
   //   const [Skills] = UseSkills();
@@ -35,16 +37,22 @@ const About = () => {
               Address:{" "}
               <span className="text-white">Madhupur,Tangail,Dhaka</span>
             </p>
-            <p className="text- text-slate-300  ml-20">
+            <p className=" text-slate-300  ml-20">
               Email:{" "}
               <span className="text-white">tawhidulislam3482@gmail.com</span>
             </p>
-            <p className="text- text-slate-300 ">
+            <p className=" text-slate-300 ">
               Phone: <span className="text-white">01826853371</span>
             </p>
-            <p className="text- text-slate-300  ml-20">
+            <p className=" text-slate-300  ml-20">
               Language: <span className="text-white">Benali, English</span>
             </p>
+          </div>
+          <div className="mt-4">
+            <a href=" " download target="_blank" className="btn w-44 uppercase rounded-3xl bg-transparent text-white">
+              download cv{" "}
+              <FaDownload className="text-lg text-yellow-600"></FaDownload>{" "}
+            </a>
           </div>
         </div>
         <div className="grid grid-cols-2 space-y-0 gap-5">
@@ -74,15 +82,18 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="mt-8">
         <h2 className="text-xl font-semibold text-center uppercase m-7">
           My Skills
         </h2>
 
-        <div className="grid grid-cols-4">
+        <div className="w-10/12 mx-auto grid grid-cols-4 gap-10 text-center">
           {data?.map((skill) => (
             <Skill key={skill.name} skill={skill}></Skill>
           ))}
+        </div>
+        <div className="text-center my-5">
+          <Experience></Experience>
         </div>
       </div>
     </div>

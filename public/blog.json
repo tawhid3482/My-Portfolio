@@ -1,0 +1,28 @@
+ [
+      {
+        "id": 1,
+        "name": "Tech Trends",
+        "image": "https://example.com/tech-trends.jpg",
+        "description": "Stay updated with the latest technology trends and innovations."
+      },
+      {
+        "id": 2,
+        "name": "Travel Diaries",
+        "image": "https://example.com/travel-diaries.jpg",
+        "description": "Explore the world through the eyes of passionate travelers and adventurers."
+      },
+      {
+        "id": 3,
+        "name": "Health & Wellness",
+        "image": "https://example.com/health-wellness.jpg",
+        "description": "Discover tips and advice for a healthier and happier life."
+      },
+      {
+        "id": 4,
+        "name": "Foodie Corner",
+        "image": "https://example.com/foodie-corner.jpg",
+        "description": "Indulge in culinary delights and explore the world of delicious recipes."
+      }
+    ]
+
+  

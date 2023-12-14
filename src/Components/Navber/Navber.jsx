@@ -3,7 +3,7 @@ import NavLinks from "./NavLink";
 import { MdOutlineMenuOpen } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from "react-router-dom";
-
+import logo from '../../assets/logo (2).png'
 const Navber = () => {
   const [openMenu, setMenu] = useState(false);
 const {user,isAdmin,logOut}=useState()
@@ -11,13 +11,15 @@ const {user,isAdmin,logOut}=useState()
   const routes = [
     { path: "/", name: "Home" },
     { path: "/about", name: "About" },
+    { path: "project", name: "Projects" },
+    { path: "contact", name: "Contact" },
    
   ]
 
   return (
     <nav className="flex justify-between items-center md:justify-center md:items-center md:text-white p-1 bg-black">
       <div className="">
-        <div className="dropdown">
+        <div className="hidden dropdown">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
                   {user?.photoURL ? (
@@ -83,7 +85,7 @@ const {user,isAdmin,logOut}=useState()
         ))}
       </ul>
       <div className="">
-        <p className="text-2xl text-yellow-600 font-bold mr-1">Logo</p>
+            <img src={logo} className="h-20 w-40"  alt="" />
       </div>
     </nav>
   );

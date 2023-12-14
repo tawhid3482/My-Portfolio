@@ -14,5 +14,9 @@
     {
         "name": "react",
         "percentage": 80
+    },
+    {
+        "name": "tailwind",
+        "percentage": 75
     }
 ]
