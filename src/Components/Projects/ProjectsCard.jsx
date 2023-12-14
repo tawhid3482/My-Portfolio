@@ -3,7 +3,7 @@ const ProjectsCard = ({ project }) => {
   const { name, image, description,liveLink,code } = project;
   return (
     <div>
-      <div className="card w-[550px] h-[400px] border border-yellow-600 bg-black text-white shadow-xl">
+      <div className="card w-full lg:w-[550px] h-[400px] border border-yellow-600 bg-black text-white shadow-xl">
         <figure>
           <img src={image} alt="Shoes" />
         </figure>

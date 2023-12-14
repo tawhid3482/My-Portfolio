@@ -16,7 +16,7 @@ const Skill = ({ skill }) => {
       <CircularProgressbar   value={percentage}  text={`${percentage}%`}  />
       </div>
 
-      <h1 className=" uppercase font-semibold mt-3 mr-10 ">
+      <h1 className=" uppercase font-semibold mt-3 ml-8 md:mr-9 lg:mr-10 ">
         {name}
       </h1>
 

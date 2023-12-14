@@ -2,7 +2,7 @@ const Blog = ({ blogs }) => {
   const {name,image,description} = blogs;
   return (
     <div>
-      <div className="card w-96 bg-black text-white border border-yellow-600  shadow-xl">
+      <div className="card w-80 lg:w-96 h-96 bg-black text-white border border-yellow-600  shadow-xl">
         <figure className="px-10 pt-10">
           <img
             src={image}

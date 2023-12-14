@@ -6,9 +6,8 @@ const Experience = () => {
       <p className="uppercase text-xl my-5 font-semibold mt-5">
         Experience & education
       </p>
-      <div className="flex justify-between items-center">
-        <div className="w-1/2 mx-auto">
-            
+      <div className=" grid grid-cols-1  lg:flex lg:justify-between lg:items-center">
+        <div className="w-1/2 mx-auto"> 
           <div className="text-left flex gap-5">
             <div className="">
                 <FaRegStickyNote className="text-2xl text-yellow-600 "></FaRegStickyNote>
@@ -38,6 +37,8 @@ const Experience = () => {
           </div>
           </div>
         </div>
+        <hr className="my-3 w-full md:w-96 md:ml-36 border-yellow-600 lg:hidden" />
+       <p className="text-center text-xl font-semibold uppercase my-3 lg:hidden">Education</p>
         <div className="w-1/2 mx-auto">
         <div className="text-left flex gap-5">
             <div className="">

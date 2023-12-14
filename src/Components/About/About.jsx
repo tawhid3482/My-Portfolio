@@ -87,7 +87,7 @@ const About = () => {
           My Skills
         </h2>
 
-        <div className="w-10/12 mx-auto grid grid-cols-4 gap-10 text-center">
+        <div className="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-center">
           {data?.map((skill) => (
             <Skill key={skill.name} skill={skill}></Skill>
           ))}

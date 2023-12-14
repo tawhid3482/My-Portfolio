@@ -1,28 +1,23 @@
  [
       {
         "id": 1,
-        "name": "Tech Trends",
-        "image": "https://example.com/tech-trends.jpg",
+        "name": "Error Solve",
+        "image": "https://www.shutterstock.com/image-vector/glitch-error-screen-vector-background-260nw-1994708351.jpg",
         "description": "Stay updated with the latest technology trends and innovations."
       },
       {
         "id": 2,
-        "name": "Travel Diaries",
-        "image": "https://example.com/travel-diaries.jpg",
+        "name": "Web Design",
+        "image": "https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1702512000&semt=ais",
         "description": "Explore the world through the eyes of passionate travelers and adventurers."
       },
       {
         "id": 3,
-        "name": "Health & Wellness",
-        "image": "https://example.com/health-wellness.jpg",
+        "name": "artificial intelligent",
+        "image": "https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp",
         "description": "Discover tips and advice for a healthier and happier life."
-      },
-      {
-        "id": 4,
-        "name": "Foodie Corner",
-        "image": "https://example.com/foodie-corner.jpg",
-        "description": "Indulge in culinary delights and explore the world of delicious recipes."
       }
+    
     ]
 
   

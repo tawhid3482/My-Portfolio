@@ -38,8 +38,8 @@ const Contact = () => {
   return (
     <div className="text-white">
       <SectionTitle subtitle1={"get in"} subtitle2={"touch"}></SectionTitle>
-      <div className="flex gap-8">
-        <div className="w-1/3">
+      <div className="grid grid-cols-1 md:flex gap-8">
+        <div className="md:w-1/3">
           <h2 className="text-xl font-bold uppercase">Don't Be shy!</h2>
           <p>
             Fee free to get in touch with me. I am always open to discussing new
@@ -95,7 +95,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-2/3">
+        <div className="md:w-2/3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex justify-around items-center gap-3">
               <input
