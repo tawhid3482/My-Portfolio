@@ -62,7 +62,7 @@ const Navber = () => {
       </div>
 
       <div
-        className="md:hidden flex justify-start mr-20 items-center"
+        className="md:hidden flex justify-start mr-20 items-center z-20"
         onClick={() => setMenu(!openMenu)}
       >
         {openMenu === true ? (
