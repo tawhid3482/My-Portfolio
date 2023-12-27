@@ -29,7 +29,7 @@ const Routers = createBrowserRouter([
           const res = await fetch('/data.json')
           const data = await res.json()
           // const data = {}
-          // console.log(data)
+          console.log(data)
           return data
         }
       },
