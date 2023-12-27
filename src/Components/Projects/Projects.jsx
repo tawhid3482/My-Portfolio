@@ -6,7 +6,7 @@ const Projects = () => {
     const [projects]= UseProjects()
     console.log(projects)
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
             <SectionTitle subtitle1={'My'} subtitle2={'projects'}></SectionTitle>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
                 {

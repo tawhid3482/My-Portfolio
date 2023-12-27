@@ -18,5 +18,17 @@
     {
         "name": "tailwind",
         "percentage": 75
+    },
+    {
+        "name": "Mongodb",
+        "percentage": 65
+    },
+    {
+        "name": "express",
+        "percentage": 60
+    },
+    {
+        "name": "node",
+        "percentage": 60
     }
 ]

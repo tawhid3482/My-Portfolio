@@ -21,13 +21,3 @@ const NavLinks = ({ route }) => {
 
 export default NavLinks;
 
-{
-  /* <NavLink
-  to="/messages"
-  className={({ isActive, isPending }) =>
-    isPending ? "pending" : isActive ? "active" : ""
-  }
->
-  Messages
-</NavLink>; */
-}

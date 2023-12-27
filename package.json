@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "aos": "^2.3.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "rc-progress": "^3.5.1",

@@ -36,15 +36,16 @@ const Contact = () => {
       );
   };
   return (
-    <div className="text-white">
+    <div className="text-white w-11/12 mx-auto">
       <SectionTitle subtitle1={"get in"} subtitle2={"touch"}></SectionTitle>
       <div className="grid grid-cols-1 md:flex gap-8">
         <div className="md:w-1/3">
-          <h2 className="text-xl font-bold uppercase">Don't Be shy!</h2>
-          <p>
+          <h2 className="text-xl font-bold uppercase"> Don't Be shy!</h2>
+          <p className="">
             Fee free to get in touch with me. I am always open to discussing new
             projects,creative ideas or opportunities to the part your visions
           </p>
+
           <div className="text-left flex gap-5 mt-5">
             <div className="">
               <FaMap className="text-4xl text-yellow-600 "></FaMap>
@@ -52,7 +53,7 @@ const Contact = () => {
             <div className="">
               <p className="uppercase text-gray-300">address point</p>
               <h2 className=" font-medium text-lg">Madhupur,Tangail</h2>
-              <h5 className="w-[450px]">Dhaka,Bangladesh</h5>
+              <h5 className=" w-full md:w-[450px]">Dhaka,Bangladesh</h5>
             </div>
           </div>
           <div className="text-left flex gap-5 mt-5">
@@ -95,18 +96,19 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <div className="md:w-2/3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="flex justify-around items-center gap-3">
               <input
                 placeholder="Your Name"
-                className="text-white bg-transparent border rounded-3xl p-3 w-full"
+                className="text-white bg-transparent border border-yellow-600 rounded-3xl p-3 w-full"
                 type="text"
                 name="from_name"
               />
               <input
                 placeholder="Your Email"
-                className="text-white w-full bg-transparent border rounded-3xl p-3"
+                className="text-white w-full bg-transparent border-yellow-600 border rounded-3xl p-3"
                 type="email"
                 name="from_email"
               />
@@ -115,7 +117,7 @@ const Contact = () => {
             <br />
             <textarea
               placeholder="Your Message"
-              className=" bg-transparent border rounded-3xl p-8 w-full text-white"
+              className=" bg-transparent border-yellow-600 border rounded-3xl p-8 w-full text-white"
               name="message"
             />
             <div className="text-center mt-3">

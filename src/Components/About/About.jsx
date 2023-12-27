@@ -6,51 +6,48 @@ import Experience from "../Experience/Experience";
 import { FaDownload } from "react-icons/fa";
 
 const About = () => {
-  //   const [Skills] = UseSkills();
-  //   console.log(Skills);
 
   const data = useLoaderData();
-  //   console.log(data);
-
+  
   return (
-    <div className="text-white">
+    <div className="text-white w-11/12 mx-auto">
       <div className="">
         <SectionTitle subtitle1={"About"} subtitle2={"me"}></SectionTitle>
       </div>
-      <div className="md:flex md:justify-around items-center">
+      <div className=" lg:flex lg:justify-around lg:items-center">
         <div className="">
           <p className="text-xl font-semibold uppercase"> personal infos</p>
-          <div className="grid grid-cols-2 space-y-1">
+          <div className="grid grid-cols-2 space-y-1 ">
             <p className="text- text-slate-300">
               First Name: <span className="text-white">Tawhidul Islam</span>
             </p>
-            <p className="text- text-slate-300 ml-20">
+            <p className="text- text-slate-300 ml-4 lg:ml-20">
               Nick Name: <span className="text-white">Saikat</span>
             </p>
             <p className="text- text-slate-300  ">
               Age: <span className="text-white">20 Years</span>
             </p>
-            <p className="text- text-slate-300  ml-20">
+            <p className="text- text-slate-300 ml-4 lg:ml-20">
               Nationality: <span className="text-white">Bangladesh</span>
             </p>
             <p className="text- text-slate-300 ">
               Address:{" "}
-              <span className="text-white">Madhupur,Tangail,Dhaka</span>
+              <span className="text-white">Madhupur,Tangail, <br className='md:hidden' /> <span>Dhaka</span></span>
             </p>
-            <p className=" text-slate-300  ml-20">
+            <p className=" text-slate-300 ml-4 lg:ml-20">
               Email:{" "}
-              <span className="text-white">tawhidulislam3482@gmail.com</span>
+              <span className="text-white">tawhidulislam3482  <br className="md:hidden" />    <span>@gmail.com</span></span>
             </p>
             <p className=" text-slate-300 ">
               Phone: <span className="text-white">01826853371</span>
             </p>
-            <p className=" text-slate-300  ml-20">
+            <p className=" text-slate-300  ml-4 lg:ml-20">
               Language: <span className="text-white">Benali, English</span>
             </p>
           </div>
-          <div className="mt-4">
-            <a href=" " download target="_blank" className="btn w-44 uppercase rounded-3xl bg-transparent text-white">
-              download cv{" "}
+          <div className="my-4">
+            <a href='../../assets/Developer CV Coming Soon.pdf' download target="_blank" className="btn w-44 uppercase rounded-3xl bg-transparent text-white">
+              download cv
               <FaDownload className="text-lg text-yellow-600"></FaDownload>{" "}
             </a>
           </div>
@@ -87,7 +84,7 @@ const About = () => {
           My Skills
         </h2>
 
-        <div className="w-10/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-center">
+        <div className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  md:gap-10 text-center">
           {data?.map((skill) => (
             <Skill key={skill.name} skill={skill}></Skill>
           ))}
