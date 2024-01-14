@@ -42,7 +42,7 @@ const About = () => {
               Phone: <span className="text-white">01826853371</span>
             </p>
             <p className=" text-slate-300  ml-4 lg:ml-20">
-              Language: <span className="text-white">Benali, English</span>
+              Language: <span className="text-white">Bengali, English</span>
             </p>
           </div>
           <div className="my-4">
