@@ -23,6 +23,14 @@
       "description": "Discover tips and advice for a healthier and happier life.",
       "liveLink":"https://assingment-12-b682e.web.app",
       "code":"https://github.com/tawhid3482/Contests-Clients-Site"
+    },
+    {
+      "id": 4,
+      "name": "SPI Collage",
+      "image": "https://i.postimg.cc/NGPCgKjy/localhost-5173-1.png",
+      "description": "this is a collage website",
+      "liveLink":"https://collage-website-2d767.web.app",
+      "code":"https://github.com/tawhid3482/collage-website"
     }
   
   ]

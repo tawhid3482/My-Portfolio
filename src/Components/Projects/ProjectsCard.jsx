@@ -7,7 +7,7 @@ const ProjectsCard = ({ project }) => {
     <div>
       <div data-aos="flip-left" className="card w-full lg:w-[520px] h-[400px] border border-yellow-600 bg-black text-white shadow-xl">
         <figure>
-          <img src={image} alt="Shoes" />
+          <img src={image} alt="projects Image" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">Project Name: {name}</h2>
