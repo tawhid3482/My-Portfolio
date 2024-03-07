@@ -10,6 +10,9 @@ import SectionTitle from "../../SectionTitle/SectionTitle";
 import { MdMarkEmailUnread } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+const serviceId = import.meta.env.VITE_SERVICEID;
+const templateId = import.meta.env.VITE_TEMPLATEID;
+const publicKey = import.meta.env.VITE_PUBLICKEY;e
 
 const Contact = () => {
   const form = useRef();
