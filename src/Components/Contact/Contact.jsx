@@ -9,22 +9,34 @@ import {
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import { MdMarkEmailUnread } from "react-icons/md";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+// import { useRef } from "react";
 const serviceId = import.meta.env.VITE_SERVICEID;
 const templateId = import.meta.env.VITE_TEMPLATEID;
-const publicKey = import.meta.env.VITE_PUBLICKEY;e
+const publicKey = import.meta.env.VITE_PUBLICKEY;
 
 const Contact = () => {
-  const form = useRef();
+  // const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const form = e.target
+    const name = form.name.value
+    const email = form.email.value
+    const message = form.message.value
+    console.log(name,email,message)
+
+    const templateParams={
+      name,
+      email,
+      to_name:"Tawhidul Islam",
+      message
+    }
     emailjs
       .sendForm(
-        "service_sv7i17n",
-        "template_nf7vqxk",
-        form.current,
-        "Q3TAuECGDlUuLdAnW"
+        serviceId,
+        templateId,
+        templateParams,
+        publicKey
       )
       .then(
         (result) => {
@@ -101,25 +113,25 @@ const Contact = () => {
         </div>
 
         <div className="md:w-2/3">
-          <form ref={form} onSubmit={sendEmail}>
+          <form  onSubmit={sendEmail}>
             <div className="flex justify-around items-center gap-3">
               <input
                 placeholder="Your Name"
                 className="text-white bg-transparent border border-yellow-600 rounded-3xl p-3 w-full"
                 type="text"
-                name="from_name"
+                name="name"
               />
               <input
                 placeholder="Your Email"
                 className="text-white w-full bg-transparent border-yellow-600 border rounded-3xl p-3"
                 type="email"
-                name="from_email"
+                name="email"
               />
             </div>
             <br />
             <br />
             <textarea
-              placeholder="Your Message"
+              placeholder="Wright Your Message Here."
               className=" bg-transparent border-yellow-600 border rounded-3xl p-8 w-full text-white"
               name="message"
             />
