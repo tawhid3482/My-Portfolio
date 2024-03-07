@@ -9,6 +9,7 @@ import {
 import SectionTitle from "../../SectionTitle/SectionTitle";
 import { MdMarkEmailUnread } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 // import { useRef } from "react";
 const serviceId = import.meta.env.VITE_SERVICEID;
 const templateId = import.meta.env.VITE_TEMPLATEID;
@@ -16,23 +17,27 @@ const publicKey = import.meta.env.VITE_PUBLICKEY;
 
 const Contact = () => {
   // const form = useRef();
+  const resetForm = () => {
+    const form = document.getElementById("contactForm");
+    form.reset();
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
     const form = e.target
-    const name = form.name.value
-    const email = form.email.value
+    const from_name = form.from_name.value
+    const from_email = form.from_email.value
     const message = form.message.value
-    console.log(name,email,message)
+    console.log(from_name,from_email,message)
 
     const templateParams={
-      name,
-      email,
+      from_name,
+      from_email,
       to_name:"Tawhidul Islam",
       message
     }
     emailjs
-      .sendForm(
+      .send(
         serviceId,
         templateId,
         templateParams,
@@ -42,7 +47,8 @@ const Contact = () => {
         (result) => {
             console.log(result.text);
             if (result.text === 'OK') {
-              form.current.reset(); 
+              resetForm();
+             toast.success('Your message successfully send!')
             }
         },
         (error) => {
@@ -113,19 +119,19 @@ const Contact = () => {
         </div>
 
         <div className="md:w-2/3">
-          <form  onSubmit={sendEmail}>
+          <form id="contactForm" onSubmit={sendEmail}>
             <div className="flex justify-around items-center gap-3">
               <input
                 placeholder="Your Name"
                 className="text-white bg-transparent border border-yellow-600 rounded-3xl p-3 w-full"
                 type="text"
-                name="name"
+                name="from_name"
               />
               <input
                 placeholder="Your Email"
                 className="text-white w-full bg-transparent border-yellow-600 border rounded-3xl p-3"
                 type="email"
-                name="email"
+                name="from_email"
               />
             </div>
             <br />
