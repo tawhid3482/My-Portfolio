@@ -4,11 +4,16 @@ import { useLoaderData } from "react-router-dom";
 import Skill from "../Skill/Skill";
 import Experience from "../Experience/Experience";
 import { FaDownload } from "react-icons/fa";
-
+import resume from "../../assets/Resume.pdf";
 const About = () => {
-
   const data = useLoaderData();
-  
+
+  // const handleCv = (url)=>{
+  //   const aTag = document.createElement('a')
+  //   aTag.href = url
+  //   aTag.setAttribute("download","")
+  // }
+
   return (
     <div className="text-white w-11/12 mx-auto">
       <div className="">
@@ -32,11 +37,17 @@ const About = () => {
             </p>
             <p className="text- text-slate-300 ">
               Address:{" "}
-              <span className="text-white">Madhupur,Tangail, <br className='md:hidden' /> <span>Dhaka</span></span>
+              <span className="text-white">
+                Madhupur,Tangail, <br className="md:hidden" />{" "}
+                <span>Dhaka</span>
+              </span>
             </p>
             <p className=" text-slate-300 ml-4 lg:ml-20">
               Email:{" "}
-              <span className="text-white">tawhidulislam3482  <br className="md:hidden" />    <span>@gmail.com</span></span>
+              <span className="text-white">
+                tawhidulislam3482 <br className="md:hidden" />{" "}
+                <span>@gmail.com</span>
+              </span>
             </p>
             <p className=" text-slate-300 ">
               Phone: <span className="text-white">01826853371</span>
@@ -46,10 +57,17 @@ const About = () => {
             </p>
           </div>
           <div className="my-4">
-            <a href='../../assets/Resume.pdf' download target="_blank" className="btn w-44 uppercase rounded-3xl bg-transparent text-white">
+            <a
+              href={resume}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn w-44 uppercase rounded-3xl bg-transparent text-white"
+            >
               download cv
               <FaDownload className="text-lg text-yellow-600" />
             </a>
+
           </div>
         </div>
         <div className="grid grid-cols-2 space-y-0 gap-5">
