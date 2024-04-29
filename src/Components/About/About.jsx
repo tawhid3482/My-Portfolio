@@ -46,9 +46,9 @@ const About = () => {
             </p>
           </div>
           <div className="my-4">
-            <a href='../../assets/Developer CV Coming Soon.pdf' download target="_blank" className="btn w-44 uppercase rounded-3xl bg-transparent text-white">
+            <a href='../../assets/Resume.pdf' download target="_blank" className="btn w-44 uppercase rounded-3xl bg-transparent text-white">
               download cv
-              <FaDownload className="text-lg text-yellow-600"></FaDownload>{" "}
+              <FaDownload className="text-lg text-yellow-600" />
             </a>
           </div>
         </div>
