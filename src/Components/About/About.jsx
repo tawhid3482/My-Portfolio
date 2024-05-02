@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import Skill from "../Skill/Skill";
 import Experience from "../Experience/Experience";
 import { FaDownload } from "react-icons/fa";
-import resume from "../../assets/Resume.pdf";
+import resume from "../../assets/Tawhidul Islam Cv.pdf";
 const About = () => {
   const data = useLoaderData();
 
