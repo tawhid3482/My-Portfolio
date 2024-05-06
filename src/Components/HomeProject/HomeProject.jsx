@@ -2,12 +2,12 @@
 import { Link } from "react-router-dom";
 import UseProjects from "../../Hooks/UseProjects";
 import SectionTitle from "../../SectionTitle/SectionTitle";
-import ProjectsCard from "./ProjectsCard";
+import ProjectsCard from "../Projects/ProjectsCard";
 
 const Projects = () => {
   const [projects] = UseProjects();
   console.log(projects);
-  const project = projects?.slice(0, 6);
+  const project = projects?.slice(0, 4);
 
   return (
     <div className="w-11/12 mx-auto">
@@ -18,8 +18,8 @@ const Projects = () => {
         ))}
       </div>
       <div className="text-center mt-8">
-        <Link to="/">
-          <button className="btn bg-blue-400 text-white">see all</button>
+        <Link to="/project">
+          <button className="btn uppercase bg-yellow-600 text-white border-none">see all</button>
         </Link>
       </div>
     </div>
