@@ -5,7 +5,20 @@ import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const Banner = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Set the duration according to your actual loading time
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
+    
     <div className="">
       <div className="md:flex md:justify-around mt-8 p-3 ">
         <div data-aos="fade-right" className="">
