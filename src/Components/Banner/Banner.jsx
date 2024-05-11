@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import img from "../../assets/Saikat1-removebg-preview (2).png";
 import { FaArrowRight } from "react-icons/fa";
+import Skeleton from "react-loading-skeleton";
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Banner = () => {
   return (
@@ -8,7 +10,7 @@ const Banner = () => {
       <div className="md:flex md:justify-around mt-8 p-3 ">
         <div data-aos="fade-right" className="">
           <img
-            src={img}
+            src={img || <Skeleton width={350} height={350} />}
             className="w-72 md:w-80 md:h-60 lg:h-full border-l-8 border-b-8 border-yellow-600 mr-0 md:mr-10"
             alt=""
           />
