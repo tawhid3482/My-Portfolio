@@ -3,6 +3,7 @@ import img from "../../assets/Saikat1-removebg-preview (2).png";
 import { FaArrowRight } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
+import  { useState, useEffect } from 'react';
 
 const Banner = () => {
 
@@ -11,7 +12,7 @@ const Banner = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Set the duration according to your actual loading time
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,11 +23,15 @@ const Banner = () => {
     <div className="">
       <div className="md:flex md:justify-around mt-8 p-3 ">
         <div data-aos="fade-right" className="">
-          <img
-            src={img || <Skeleton width={350} height={350} />}
-            className="w-72 md:w-80 md:h-60 lg:h-full border-l-8 border-b-8 border-yellow-600 mr-0 md:mr-10"
-            alt=""
-          />
+        {loading ? (
+            <Skeleton width={350} height={350} />
+          ) : (
+            <img
+              src={img}
+              className="w-72 md:w-80 md:h-60 lg:h-full border-l-8 border-b-8 border-yellow-600 mr-0 md:mr-10"
+              alt=""
+            />
+          )}
         </div>
         <div className="mt-10 space-y-3 ml-5">
           <h2 data-aos="fade-left" className="text-2xl lg:text-3xl text-yellow-600 font-bold">- I AM TAWHIDUL ISLAM </h2>
