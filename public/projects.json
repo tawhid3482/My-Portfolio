@@ -9,6 +9,15 @@
     },
     {
       "id": 2,
+      "name": "Brand-Shop",
+      "image": "https://i.postimg.cc/FzwfNnKS/Screenshot-2024-11-16-123531.png",
+      "description": "You can see many brand product in this website",
+      "liveLink":"https://assingment-10-8eb20.web.app",
+      "code":"https://github.com/tawhid3482/Brand-shop"
+
+    },
+    {
+      "id": 3,
       "name": "Food Restaurant",
       "image": "https://i.postimg.cc/4dddpPMf/Screenshot-63.png",
       "description": "Explore the world through the eyes of passionate travelers and adventurers.",
@@ -17,7 +26,7 @@
 
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Contests platform",
       "image": "https://i.postimg.cc/J4mhqRSY/Screenshot-2023-12-31-204221.png",
       "description": "Discover tips and advice for a healthier and happier life.",
@@ -25,7 +34,7 @@
       "code":"https://github.com/tawhid3482/Contests-Clients-Site"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "SPI Collage",
       "image": "https://i.postimg.cc/NGPCgKjy/localhost-5173-1.png",
       "description": "this is a collage website",
@@ -33,7 +42,7 @@
       "code":"https://github.com/tawhid3482/collage-website"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Doc Hourse",
       "image": "https://i.postimg.cc/66RxCZs7/Screenshot-2024-05-06-130256.png",
       "description": "this is a online hospital",
@@ -41,7 +50,7 @@
       "code":"https://github.com/tawhid3482/Doc-Hourse"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Grocery-Shop",
       "image": "https://i.postimg.cc/qvDfP0Q7/Screenshot-2024-11-09-165840.png",
       "description": "A Online Grocery Shop",
