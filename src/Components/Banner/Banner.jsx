@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import img from "../../assets/Saikat1-removebg-preview (2).png";
+import img from "../../assets/Saikat.png";
 import { FaArrowRight } from "react-icons/fa";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
