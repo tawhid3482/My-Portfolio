@@ -6,8 +6,7 @@ import ProjectsCard from "../Projects/ProjectsCard";
 
 const Projects = () => {
   const [projects] = UseProjects();
-  console.log(projects);
-  const project = projects?.slice(0, 4);
+  const project = projects?.slice()?.reverse()?.slice(0, 4);
 
   return (
     <div className="w-11/12 mx-auto">
