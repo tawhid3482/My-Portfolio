@@ -4,15 +4,9 @@ import { useLoaderData } from "react-router-dom";
 import Skill from "../Skill/Skill";
 import Experience from "../Experience/Experience";
 import { FaDownload } from "react-icons/fa";
-import resume from "../../assets/Tawhidul Islam Cv.pdf";
+import resume from "../../assets/CV.pdf";
 const About = () => {
   const data = useLoaderData();
-
-  // const handleCv = (url)=>{
-  //   const aTag = document.createElement('a')
-  //   aTag.href = url
-  //   aTag.setAttribute("download","")
-  // }
 
   return (
     <div className="text-white w-11/12 mx-auto">
@@ -30,7 +24,7 @@ const About = () => {
               Nick Name: <span className="text-white">Saikat</span>
             </p>
             <p className="text- text-slate-300  ">
-              Age: <span className="text-white">20 Years</span>
+              Age: <span className="text-white">21 Years</span>
             </p>
             <p className="text- text-slate-300 ml-4 lg:ml-20">
               Nationality: <span className="text-white">Bangladesh</span>
@@ -72,7 +66,7 @@ const About = () => {
         </div>
         <div className="grid grid-cols-2 space-y-0 gap-5">
           <div className="w-36  border border-yellow-600 rounded-lg ">
-            <p className="text-5xl text-yellow-600   font-bold ">1+</p>
+            <p className="text-5xl text-yellow-600   font-bold ">2+</p>
             <h1 className=" ml-10 uppercase font-semibold text-slate-300 ">
               Years of experience
             </h1>
@@ -83,11 +77,11 @@ const About = () => {
               completed projects
             </h1>
           </div>
-          <div className="w-36 border border-yellow-600 rounded-lg ">
-            <p className="text-5xl text-yellow-600 p-1 font-bold ">0+</p>
+          <div className="">
+            {/* <p className="text-5xl text-yellow-600 p-1 font-bold ">0+</p>
             <h1 className=" ml-10 uppercase font-semibold text-slate-300 ">
               Happy customers
-            </h1>
+            </h1> */}
           </div>
           <div className="w-36 border border-yellow-600 rounded-lg ">
             <p className="text-5xl text-yellow-600 p-1 font-bold ">3+</p>

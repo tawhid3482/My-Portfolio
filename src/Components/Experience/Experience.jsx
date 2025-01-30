@@ -13,12 +13,12 @@ const Experience = () => {
                 <FaRegStickyNote className="text-2xl text-yellow-600 "></FaRegStickyNote>
             </div>
           <div className="">
-          <p> 2023-Present</p>
+          <p> 2023</p>
             <h2 className="uppercase font-medium text-lg">
-              Web developer-<span className="text-sm">envato</span>
+              Web developer-<span className="text-sm">front-end</span>
             </h2>
             <h5 className="w-52 md:w-[450px]">
-              Recently i complete my web development journey.
+               I completed my web development journey.
             </h5>
           </div>
           </div>
@@ -32,7 +32,7 @@ const Experience = () => {
               Web Design - <span className="text-sm">themeforest</span>
             </h2>
             <h5 className="w-52 md:w-[450px]">
-             in 2021-2022 i work on web design
+             In 2021-2022 i worked on web design
             </h5>
           </div>
           </div>
@@ -45,12 +45,12 @@ const Experience = () => {
                 <FaRegStickyNote className="text-2xl text-yellow-600 "></FaRegStickyNote>
             </div>
           <div className="">
-          <p>2023-Present</p>
+          <p>2025-Present</p>
             <h2 className="uppercase font-medium text-lg">
-              Diploma 2nd Year - <span className="text-sm">student</span>
+              Diploma 4th Year - <span className="text-sm">student</span>
             </h2>
             <h5 className="w-52 md:w-[450px]">
-              now i read in diploma 2nd year in sylhet polytacnic institution
+              Now i read in diploma 2nd year in Sylhet polytechnic Institute
             </h5>
           </div>
           </div>
@@ -64,7 +64,7 @@ const Experience = () => {
               SSC - <span className="text-sm">high school</span>
             </h2>
             <h5 className="w-52 md:w-[450px]">
-             i complete my higher secondary study in madhupur,tangail.
+             I completed my higher secondary study in madhupur,tangail.
             </h5>
           </div>
           </div>
