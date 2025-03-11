@@ -24,37 +24,30 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const form = e.target
-    const from_name = form.from_name.value
-    const from_email = form.from_email.value
-    const message = form.message.value
-    console.log(from_name,from_email,message)
+    const form = e.target;
+    const from_name = form.from_name.value;
+    const from_email = form.from_email.value;
+    const message = form.message.value;
+    console.log(from_name, from_email, message);
 
-    const templateParams={
+    const templateParams = {
       from_name,
       from_email,
-      to_name:"Tawhidul Islam",
-      message
-    }
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        templateParams,
-        publicKey
-      )
-      .then(
-        (result) => {
-            console.log(result.text);
-            if (result.text === 'OK') {
-              resetForm();
-             toast.success('Your message successfully send!')
-            }
-        },
-        (error) => {
-          console.log(error.text);
+      to_name: "Tawhidul Islam",
+      message,
+    };
+    emailjs.send(serviceId, templateId, templateParams, publicKey).then(
+      (result) => {
+        console.log(result.text);
+        if (result.text === "OK") {
+          resetForm();
+          toast.success("Your message successfully send!");
         }
-      );
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
   return (
     <div className="text-white w-11/12 mx-auto">
@@ -63,8 +56,9 @@ const Contact = () => {
         <div className="md:w-1/3">
           <h2 className="text-xl font-bold uppercase"> Don't Be shy!</h2>
           <p className="">
-            Fee free to get in touch with me. I am always open to discussing new
-            projects,creative ideas or opportunities to the part your visions
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas, or opportunities to be a part of your
+            vision
           </p>
 
           <div className="text-left flex gap-5 mt-5">

@@ -53,7 +53,7 @@ const Banner = () => {
             <Skeleton count={3} width={400} height={15} />
           ) : (
             <p className="text-white font-lg w-64 md:w-[450px] lg:w-[520px] text-left ">
-              I am a React based front-end web developer focused on crafting
+              I am a mern-stack web developer focused on crafting
               clean & user-friendly experiences, I am passionate about building
               excellent software that improves the lives of those around me.
             </p>

@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import Skill from "../Skill/Skill";
 import Experience from "../Experience/Experience";
 import { FaDownload } from "react-icons/fa";
-import resume from "../../assets/CV.pdf";
+import resume from "../../assets/resume.pdf";
 const About = () => {
   const data = useLoaderData();
 
@@ -44,7 +44,8 @@ const About = () => {
               </span>
             </p>
             <p className=" text-slate-300 ">
-              Phone: <span className="text-white">01826853371</span>
+              Phone:{" "}
+              <span className="text-white">01826853371, 01853505787</span>
             </p>
             <p className=" text-slate-300  ml-4 lg:ml-20">
               Language: <span className="text-white">Bengali, English</span>
@@ -61,7 +62,6 @@ const About = () => {
               download cv
               <FaDownload className="text-lg text-yellow-600" />
             </a>
-
           </div>
         </div>
         <div className="grid grid-cols-2 space-y-0 gap-5">
@@ -77,11 +77,8 @@ const About = () => {
               completed projects
             </h1>
           </div>
-          <div className="">
-            {/* <p className="text-5xl text-yellow-600 p-1 font-bold ">0+</p>
-            <h1 className=" ml-10 uppercase font-semibold text-slate-300 ">
-              Happy customers
-            </h1> */}
+          <div className="w-36 border border-yellow-600 rounded-lg flex justify-center items-center text-7xl">
+            😊
           </div>
           <div className="w-36 border border-yellow-600 rounded-lg ">
             <p className="text-5xl text-yellow-600 p-1 font-bold ">3+</p>
