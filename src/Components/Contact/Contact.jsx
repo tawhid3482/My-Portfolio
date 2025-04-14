@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   FaFacebook,
   FaGithub,
@@ -28,7 +29,7 @@ const Contact = () => {
     const from_name = form.from_name.value;
     const from_email = form.from_email.value;
     const message = form.message.value;
-    console.log(from_name, from_email, message);
+    // console.log(from_name, from_email, message);
 
     const templateParams = {
       from_name,
