@@ -97,16 +97,16 @@ const Contact = () => {
               Social media{" "}
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
-              <a href="">
+              <a href="https://web.facebook.com/profile.php?id=100060174410562">
                 <FaFacebook className="text-4xl mt-2"></FaFacebook>
               </a>
-              <a href="">
+              <a href="https://x.com/Tawhidul3482">
                 <FaTwitter className="text-4xl mt-2"></FaTwitter>
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/tawhidul-islam-saikat-86b61a2a0">
                 <FaLinkedin className="text-4xl mt-2"></FaLinkedin>
               </a>
-              <a href="">
+              <a href="https://github.com/tawhid3482">
                 <FaGithub className="text-4xl mt-2"></FaGithub>
               </a>
             </div>
