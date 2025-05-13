@@ -4,7 +4,7 @@ const ProjectSkeleton = ({ item }) => {
   return Array(item)
     .fill(0)
     .map((items) => (
-      <div key={items.id}>
+      <div key={items?.id}>
         <div
           data-aos="flip-left"
           className="card w-full lg:w-[520px] h-[400px] border border-yellow-600 bg-black text-white shadow-xl"

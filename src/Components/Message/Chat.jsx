@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaFacebookMessenger } from "react-icons/fa";
-import Message from "./Message";
 import AdminChat from "./AdminChat";
+import ChatWrapper from "./ChatWrapper";
 
 const Chat = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +23,6 @@ const Chat = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const submittedEmail = formData.email.trim().toLowerCase();
-
     if (submittedEmail === adminEmail) {
       setChatView("admin");
     } else {
@@ -43,7 +42,6 @@ const Chat = () => {
           <FaFacebookMessenger size={24} />
         </button>
       )}
-
       {/* Chat Form */}
       {/* Chat Form */}
       {!chatView && isModalOpen && (
@@ -86,15 +84,13 @@ const Chat = () => {
           </form>
         </div>
       )}
-
       {/* Chat UI */}
+      {/* Render Chat View */}
       {chatView === "user" && (
-        <Message
-          isModalOpen={isModalOpen}
-          setIsModalOpen={setIsModalOpen}
-          isChatStarted={true}
-          setIsChatStarted={() => {}}
-          formData={formData}
+        <ChatWrapper
+          userName={formData.name}
+          userEmail={formData.email}
+          onClose={() => setChatView(null)}
         />
       )}
       {chatView === "admin" && <AdminChat />}

@@ -6,7 +6,6 @@ import About from "../Components/About/About";
 import Blogs from "../Components/Blogs/Blogs";
 import Projects from "../Components/Projects/Projects";
 import Contact from "../Components/Contact/Contact";
-import AdminChat from "../Components/Message/AdminChat";
 import Chat from "../Components/Message/Chat";
 
 const Routers = createBrowserRouter([
@@ -31,7 +30,6 @@ const Routers = createBrowserRouter([
           const res = await fetch('/data.json')
           const data = await res.json()
           // const data = {}
-          // console.log(data)
           return data
         }
       },
@@ -47,10 +45,6 @@ const Routers = createBrowserRouter([
       {
         path:'contact',
         element:<Contact></Contact>
-      },
-       {
-        path: "admin/chat", // ✅ Admin Chat UI route
-        element: <AdminChat />,
       },
        {
         path: "/chat", // ✅ Admin Chat UI route
