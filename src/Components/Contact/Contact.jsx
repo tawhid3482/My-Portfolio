@@ -11,6 +11,7 @@ import SectionTitle from "../../SectionTitle/SectionTitle";
 import { MdMarkEmailUnread } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import Chat from "../Message/Chat";
 // import { useRef } from "react";
 const serviceId = import.meta.env.VITE_SERVICEID;
 const templateId = import.meta.env.VITE_TEMPLATEID;
@@ -146,6 +147,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <Chat></Chat>
     </div>
   );
 };

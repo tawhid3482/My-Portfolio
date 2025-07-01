@@ -13,12 +13,12 @@ const Experience = () => {
               <FaRegStickyNote className="text-2xl text-yellow-600 "></FaRegStickyNote>
             </div>
             <div className="">
-              <p> 2024</p>
+              <p> 2025</p>
               <h2 className="uppercase font-medium text-lg">
-                Web developer-<span className="text-sm">mern-stack</span>
+                Web developer-<span className="text-sm">full-stack</span>
               </h2>
               <h5 className="w-52 md:w-[450px]">
-              I have completed my mern-stack journey
+              I have completed my full-stack journey
               </h5>
             </div>
           </div>

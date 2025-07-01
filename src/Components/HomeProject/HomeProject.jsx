@@ -18,7 +18,7 @@ const Projects = () => {
       </div>
       <div className="text-center mt-8">
         <Link to="/project">
-          <button className="btn uppercase bg-yellow-600 text-white border-none">see all</button>
+          <button className="btn btn-sm uppercase bg-yellow-600 text-white border-none">see all</button>
         </Link>
       </div>
     </div>

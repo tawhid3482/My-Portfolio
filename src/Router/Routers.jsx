@@ -7,6 +7,7 @@ import Blogs from "../Components/Blogs/Blogs";
 import Projects from "../Components/Projects/Projects";
 import Contact from "../Components/Contact/Contact";
 import Chat from "../Components/Message/Chat";
+import ProjectDetails from "../Components/Projects/ProjectDetails";
 
 const Routers = createBrowserRouter([
   {
@@ -17,36 +18,44 @@ const Routers = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader:async ()=> {
-          const res = await fetch('/data.json')
-          const data = await res.json()
-          return data
-        }
+        loader: async () => {
+          const res = await fetch("/data.json");
+          const data = await res.json();
+          return data;
+        },
       },
       {
-        path:'about',
-        element:<About></About>,
-        loader:async ()=> {
-          const res = await fetch('/data.json')
-          const data = await res.json()
-          // const data = {}
-          return data
-        }
+        path: "about",
+        element: <About></About>,
+        loader: async () => {
+          const res = await fetch("/data.json");
+          const data = await res.json();
+          return data;
+        },
       },
-      
+
       {
-        path:'blog',
-        element:<Blogs></Blogs>,
-      },
-      {
-        path:'project',
-        element:<Projects></Projects>
+        path: "blog",
+        element: <Blogs></Blogs>,
       },
       {
-        path:'contact',
-        element:<Contact></Contact>
+        path: "project",
+        element: <Projects></Projects>,
       },
-       {
+      {
+        path: "project/:id",
+        element: <ProjectDetails></ProjectDetails>,
+          loader: async () => {
+          const res = await fetch("/projects.json");
+          const data = await res.json();
+          return data;
+        },
+      },
+      {
+        path: "contact",
+        element: <Contact></Contact>,
+      },
+      {
         path: "/chat", // ✅ Admin Chat UI route
         element: <Chat />,
       },

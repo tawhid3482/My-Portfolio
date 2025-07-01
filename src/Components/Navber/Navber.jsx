@@ -14,10 +14,9 @@ const Navber = () => {
     { path: "project", name: "Projects" },
     { path: "contact", name: "Contact" },
   ];
-  
 
   return (
-    <nav className="flex justify-between items-center md:justify-center md:items-center md:text-white p-1 bg-black">
+    <nav className="flex justify-between items-center md:justify-center md:items-center md:text-white p-1 bg-black z-index-50">
       <div className="">
         <div className="hidden dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -73,7 +72,7 @@ const Navber = () => {
       </div>
 
       <ul
-        className={` md:flex  md:justify-center rounded-md w-40  md:w-full duration-1000 absolute left-0 md:static bg-black text-white p-4
+        className={` md:flex  md:justify-center rounded-md w-40  md:w-full duration-1000 absolute left-0 md:static bg-black text-white p-4 z-10
       ${openMenu ? "top-16" : "-top-60"}
       `}
       >

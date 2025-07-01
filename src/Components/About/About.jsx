@@ -5,6 +5,7 @@ import Skill from "../Skill/Skill";
 import Experience from "../Experience/Experience";
 import { FaDownload } from "react-icons/fa";
 import resume from "../../assets/resume.pdf";
+import Chat from "../Message/Chat";
 const About = () => {
   const data = useLoaderData();
 
@@ -102,6 +103,7 @@ const About = () => {
           <Experience></Experience>
         </div>
       </div>
+      <Chat></Chat>
     </div>
   );
 };

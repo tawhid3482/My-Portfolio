@@ -1,50 +1,55 @@
 [
-    {
-        "name": "html",
-        "percentage": 87
-    },
-    {
-        "name": "Css",
-        "percentage": 87
-    },
-    {
-        "name": "javascript",
-        "percentage": 70
-    },
-    {
-        "name": "typescript",
-        "percentage": 65
-    },
-    {
-        "name": "react",
-        "percentage": 80
-    },
-    {
-        "name": "redux",
-        "percentage": 60
-    },
-    {
-        "name": "next.js",
-        "percentage": 50
-    },
-    {
-        "name": "tailwind",
-        "percentage": 75
-    },
-    {
-        "name": "Mongodb",
-        "percentage": 75
-    },
-    {
-        "name": "Mongoose",
-        "percentage": 70
-    },
-    {
-        "name": "express",
-        "percentage": 70
-    },
-    {
-        "name": "node.js",
-        "percentage": 70
-    }
+  {
+    "name": "html",
+    "percentage": 87
+  },
+  {
+    "name": "Css",
+    "percentage": 87
+  },
+  {
+    "name": "tailwind",
+    "percentage": 75
+  },
+  {
+    "name": "javascript",
+    "percentage": 70
+  },
+  {
+    "name": "typescript",
+    "percentage": 65
+  },
+  {
+    "name": "react",
+    "percentage": 80
+  },
+  {
+    "name": "redux",
+    "percentage": 60
+  },
+  {
+    "name": "next.js",
+    "percentage": 50
+  },
+
+  {
+    "name": "Mongodb",
+    "percentage": 75
+  },
+  {
+    "name": "Postgresql",
+    "percentage": 60
+  },
+  {
+    "name": "Prisma",
+    "percentage": 65
+  },
+  {
+    "name": "express",
+    "percentage": 70
+  },
+  {
+    "name": "node.js",
+    "percentage": 70
+  }
 ]

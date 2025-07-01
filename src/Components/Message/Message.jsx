@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { IoMdClose } from "react-icons/io";
 
-const API_BASE = "http://localhost:5000/api/chat";
+const API_BASE = "https://my-protflio-server.vercel.app/api/chat";
 
 const UserChat = ({ userName, userEmail, onClose }) => {
   const [messages, setMessages] = useState([]);
